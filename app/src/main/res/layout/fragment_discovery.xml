@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".fragments.DiscoveryFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animationCache="false"
+        android:scrollbars="vertical"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp">
+        <com.chronosystems.nearbyapp.components.loader.ProgressView
+            android:id="@+id/pv_discovery"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_discovery_action"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:backgroundTint="#f1f5ff"
+            app:borderWidth="1dp"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            android:alpha="0.9"
+            android:src="@drawable/ic_bluetooth_search"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:id="@+id/tv_count_down"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginBottom="16dp" />
+
+</FrameLayout>

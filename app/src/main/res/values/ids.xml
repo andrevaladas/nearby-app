@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        This is the service identifier for Nearby Connections. Do NOT copy and paste this value
+        into your own application.  Instead, choose a unique identifier that is appropriate for
+        your application.
+    -->
+    <!-- API KEY for Nearby Messages -->
+    <string name="api_key">AIzaSyAn9k-5F1dT3ZGJY5ru4DJE2jYEPA5xkJg</string>
+
+    <!-- SERVICE IP for Nearby Connections -->
+    <string name="service_id">com.chronosystems.nearbyapp.services</string>
+</resources>

@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".fragments.ChatFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:baselineAligned="true"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_chat_message"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:fastScrollAlwaysVisible="false"
+            android:fastScrollEnabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:footerDividersEnabled="false"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+        <LinearLayout
+            android:id="@+id/ll_chat_input"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <EditText
+                android:id="@+id/et_chat_input_message"
+                android:layout_width="297dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="6"
+                android:alpha="0.7"
+                android:autoText="false"
+                android:background="@drawable/bg_input_message"
+                android:elegantTextHeight="false"
+                android:enabled="true"
+                android:gravity="left"
+                android:inputType="text"
+                android:linksClickable="true"
+                android:padding="10dp"
+                android:phoneNumber="false"
+                android:singleLine="true"
+                android:textColor="@color/text_msg_input" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_chat_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:alpha="0.9"
+                android:gravity="right"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_send"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_anchor="@id/et_chat_input_message"
+                app:layout_anchorGravity="bottom|end" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

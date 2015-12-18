@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/DiscoveryActivity.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/adapters/DiscoveryAdapter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/domain/messages/NearbyDevice.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/domain/wrappers/NearbyDeviceWrapper.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/fragments/ChatFragment.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/fragments/DiscoveryFragment.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/helper/QuickPrefsHelper.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/interfaces/AppRecyclerViewOnClickListener.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/chronosystems/nearbyapp/services/NearbyConnectionsClient.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/profile_2.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/profile_3.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/wallpaper.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/wallpaper_2.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/wallpaper_3.jpg" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discovery.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_chat.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_discovery.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_discovery_card.xml" charset="windows-1252" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

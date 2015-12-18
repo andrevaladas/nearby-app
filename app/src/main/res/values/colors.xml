@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1ea4f7</color>
+
+    <color name="grey">#ddd</color>
+    <color name="black">#000</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondText">#999</color>
+
+    <!-- Chat -->
+    <color name="actionbar">#3cb879</color>
+    <color name="bg_msg_you">#b4deb6</color>
+    <color name="bg_msg_from">#ffffff</color>
+    <color name="bg_msg_time_you">#e9f5ea</color>
+    <color name="bg_msg_time_from">#bcbcbc</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_msg_input">#fff</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="text_msg_from">#434343</color>
+    <color name="bg_btn_send">#1e6258</color>
+    <color name="bg_btn_send_center">#1e7058</color>
+</resources>
+

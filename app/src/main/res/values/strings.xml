@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">NearbyApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="request_modal_title">Someone wants to talk to you!</string>
+    <string name="request_name">User name</string>
+    <string name="request_message">Look around!\nThis request come from near of you.</string>
+    <string name="request_cancel">Cancel</string>
+    <string name="request_confirm">Confirm</string>
+
+    <string name="request_notification_title">NearbyApp: Look around!</string>
+    <string name="request_notification_placeholder_text">
+        %1$s wants to talk to you.
+    </string>
+    <string name="action_reject">Reject</string>
+    <string name="action_accept">Accept</string>
+</resources>

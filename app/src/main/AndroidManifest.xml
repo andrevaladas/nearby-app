@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chronosystems.nearbyapp" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_nearby_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NearbyAppTheme.NoActionBar.FullScreen" >
+
+        <!-- Required for Nearby Messages API -->
+        <meta-data
+            android:name="com.google.android.nearby.messages.API_KEY"
+            android:value="@string/api_key" />
+
+        <!-- Required for Nearby Connections API -->
+        <meta-data
+            android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
+            android:value="@string/service_id" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NearbyAppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DiscoveryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NearbyAppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RequestActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NearbyAppTheme.Dialog" >
+        </activity>
+        <activity
+            android:name=".RequestLoaderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/app_name"
+            android:theme="@style/NearbyAppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!--
+       receiver
+           android:name=".services.NearbyScheduleReceiver">
+           <intent-filter>
+               <action android:name="android.intent.action.BOOT_COMPLETED" />
+           </intent-filter>
+       </receiver>
+       <receiver android:name=".services.NearbyStartServiceReceiver" /-->
+        <service android:name=".services.NearbyBroadcastService" />
+        <receiver
+            android:name=".receivers.RejectRequestReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+    </application>
+
+</manifest>
